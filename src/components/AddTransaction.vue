@@ -22,9 +22,6 @@ export default {
     setup(_, { emit }) {
         const name = ref('')
         const cost = ref(null)
-        // watch(name, () => {
-        //     console.log("Name changed from", name.value);
-        // });
         const toast = useToast()
         const onSubmit = ()=> {
             if(!name.value || !cost.value)
@@ -39,7 +36,6 @@ export default {
             cost.value= null
           }
         }
-       
         return {name , cost , onSubmit}
     },
 }

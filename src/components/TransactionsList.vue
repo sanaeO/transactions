@@ -19,9 +19,6 @@ export default {
         required : true
     }
   },
- setup(){
-
- }
 }
 </script>
 <style scoped>
